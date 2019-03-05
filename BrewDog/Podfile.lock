@@ -1,0 +1,30 @@
+PODS:
+  - Kingfisher (5.2.0)
+  - Reachability (3.2)
+  - SwiftLint (0.30.1)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+
+DEPENDENCIES:
+  - Kingfisher (~> 5.1)
+  - Reachability (~> 3.2)
+  - SwiftLint (~> 0.30.1)
+  - SwiftMessages (~> 6.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - Reachability
+    - SwiftLint
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+
+PODFILE CHECKSUM: 6a151eab7e88bfe8f0720d37785e8f3131b4bacb
+
+COCOAPODS: 1.5.3

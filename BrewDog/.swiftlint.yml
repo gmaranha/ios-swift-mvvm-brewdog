@@ -1,0 +1,25 @@
+disabled_rules:
+  - line_length
+  - trailing_whitespace
+  - vertical_whitespace
+opt_in_rules:
+  - empty_count
+  - vertical_parameter_alignment
+  - force_unwrapping
+included: 
+excluded: 
+  - Pods
+
+type_name:
+  min_length: 1
+  max_length:
+    warning: 40
+    error: 50
+
+identifier_name:
+  min_length: 1
+  max_length:
+    warning: 40
+    error: 50
+
+reporter: "xcode"

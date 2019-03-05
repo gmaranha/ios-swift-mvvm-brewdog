@@ -1,0 +1,19 @@
+platform :ios, '12.1'
+
+target 'BrewDog' do
+  use_frameworks!
+
+  pod 'SwiftLint', "~>0.30.1"
+  pod 'Kingfisher', "~>5.1"
+  pod 'SwiftMessages', "~>6.0"
+  pod 'Reachability', "~>3.2"
+
+  target 'BrewDogTests' do
+    inherit! :search_paths
+  end
+
+  target 'BrewDogUITests' do
+    inherit! :search_paths
+  end
+
+end
