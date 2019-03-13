@@ -62,6 +62,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <accessibility key="accessibilityConfiguration" identifier="BeerCell"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="gyr-Dy-tPS" secondAttribute="bottom" id="5g4-9F-ssg"/>
                                                 <constraint firstItem="2xG-pw-TdP" firstAttribute="width" secondItem="ovi-aV-82Z" secondAttribute="width" id="68E-R8-94w"/>
@@ -109,6 +110,9 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="BeerListScreen"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="RKa-Jr-hjh" id="oFq-dq-wYN"/>
                             <outlet property="delegate" destination="RKa-Jr-hjh" id="RBY-r1-nVu"/>
@@ -196,6 +200,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.18071377277374268" green="0.19080325961112976" blue="0.25491046905517578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <accessibility key="accessibilityConfiguration" identifier="BeerScreen"/>
                         <constraints>
                             <constraint firstItem="5Tb-aN-I8V" firstAttribute="leading" secondItem="4rw-LX-QAV" secondAttribute="leading" constant="16" id="HMU-UE-xZj"/>
                             <constraint firstItem="ei3-MC-2CZ" firstAttribute="width" secondItem="5Tb-aN-I8V" secondAttribute="width" id="JWX-5a-wXx"/>

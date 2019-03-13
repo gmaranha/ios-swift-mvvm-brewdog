@@ -29,6 +29,12 @@
 		F78729D322306B43008915D4 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D222306B43008915D4 /* UICollectionView+Extensions.swift */; };
 		F78729D5223070EB008915D4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D4223070EB008915D4 /* BeerDetailViewController.swift */; };
 		F78729D72230C9B3008915D4 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */; };
+		F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3832238807000BCBDF4 /* BaseTests.swift */; };
+		F799E38B2238807000BCBDF4 /* BrewDogListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3842238807000BCBDF4 /* BrewDogListTests.swift */; };
+		F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3862238807000BCBDF4 /* BaseScreen.swift */; };
+		F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3872238807000BCBDF4 /* BeerListScreen.swift */; };
+		F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */; };
+		F799E390223897F400BCBDF4 /* BeerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E38F223897F400BCBDF4 /* BeerScreen.swift */; };
 		F7CA2B9B2231B1F200098ACE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */; };
 		F7CA2B9F2231BA0800098ACE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +91,12 @@
 		F78729D222306B43008915D4 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		F78729D4223070EB008915D4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F799E3832238807000BCBDF4 /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
+		F799E3842238807000BCBDF4 /* BrewDogListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewDogListTests.swift; sourceTree = "<group>"; };
+		F799E3862238807000BCBDF4 /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		F799E3872238807000BCBDF4 /* BeerListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListScreen.swift; sourceTree = "<group>"; };
+		F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		F799E38F223897F400BCBDF4 /* BeerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerScreen.swift; sourceTree = "<group>"; };
 		F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +196,9 @@
 		F71557FA222EF2BB0000F9C9 /* BrewDogUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F799E3882238807000BCBDF4 /* Common */,
+				F799E3852238807000BCBDF4 /* Screens */,
+				F799E3822238807000BCBDF4 /* Tests */,
 				F71557FB222EF2BB0000F9C9 /* BrewDogUITests.swift */,
 				F71557FD222EF2BB0000F9C9 /* Info.plist */,
 			);
@@ -317,6 +332,33 @@
 				F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F799E3822238807000BCBDF4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F799E3832238807000BCBDF4 /* BaseTests.swift */,
+				F799E3842238807000BCBDF4 /* BrewDogListTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F799E3852238807000BCBDF4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F799E3862238807000BCBDF4 /* BaseScreen.swift */,
+				F799E3872238807000BCBDF4 /* BeerListScreen.swift */,
+				F799E38F223897F400BCBDF4 /* BeerScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F799E3882238807000BCBDF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,7 +620,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */,
 				F71557FC222EF2BB0000F9C9 /* BrewDogUITests.swift in Sources */,
+				F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */,
+				F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */,
+				F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */,
+				F799E390223897F400BCBDF4 /* BeerScreen.swift in Sources */,
+				F799E38B2238807000BCBDF4 /* BrewDogListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

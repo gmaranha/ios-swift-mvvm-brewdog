@@ -2,6 +2,7 @@ platform :ios, '12.1'
 
 target 'BrewDog' do
   use_frameworks!
+  inhibit_all_warnings!
 
   pod 'SwiftLint', "~>0.30.1"
   pod 'Kingfisher', "~>5.1"
