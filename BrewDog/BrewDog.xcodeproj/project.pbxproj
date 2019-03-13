@@ -14,7 +14,6 @@
 		F71557E3222EF2BB0000F9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71557E2222EF2BB0000F9C9 /* Assets.xcassets */; };
 		F71557E6222EF2BB0000F9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71557E4222EF2BB0000F9C9 /* LaunchScreen.storyboard */; };
 		F71557F1222EF2BB0000F9C9 /* BrewDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557F0222EF2BB0000F9C9 /* BrewDogTests.swift */; };
-		F71557FC222EF2BB0000F9C9 /* BrewDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557FB222EF2BB0000F9C9 /* BrewDogUITests.swift */; };
 		F7155812222F03900000F9C9 /* Beers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7155811222F03900000F9C9 /* Beers.storyboard */; };
 		F7155815222F05920000F9C9 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7155814222F05920000F9C9 /* BeerListViewModel.swift */; };
 		F7155817222F06890000F9C9 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7155816222F06890000F9C9 /* BeerViewModel.swift */; };
@@ -75,7 +74,6 @@
 		F71557F0222EF2BB0000F9C9 /* BrewDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDogTests.swift; sourceTree = "<group>"; };
 		F71557F2222EF2BB0000F9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71557F7222EF2BB0000F9C9 /* BrewDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71557FB222EF2BB0000F9C9 /* BrewDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDogUITests.swift; sourceTree = "<group>"; };
 		F71557FD222EF2BB0000F9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7155811222F03900000F9C9 /* Beers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Beers.storyboard; sourceTree = "<group>"; };
 		F7155814222F05920000F9C9 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +95,7 @@
 		F799E3872238807000BCBDF4 /* BeerListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListScreen.swift; sourceTree = "<group>"; };
 		F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		F799E38F223897F400BCBDF4 /* BeerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerScreen.swift; sourceTree = "<group>"; };
+		F799E391223946C700BCBDF4 /* BrewDog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrewDog.entitlements; sourceTree = "<group>"; };
 		F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +176,7 @@
 		F71557D7222EF2B90000F9C9 /* BrewDog */ = {
 			isa = PBXGroup;
 			children = (
+				F799E391223946C700BCBDF4 /* BrewDog.entitlements */,
 				F715580C222F004D0000F9C9 /* Resources */,
 				F715580B222F000F0000F9C9 /* Source */,
 				F7155810222F01690000F9C9 /* SupportingFiles */,
@@ -199,7 +199,6 @@
 				F799E3882238807000BCBDF4 /* Common */,
 				F799E3852238807000BCBDF4 /* Screens */,
 				F799E3822238807000BCBDF4 /* Tests */,
-				F71557FB222EF2BB0000F9C9 /* BrewDogUITests.swift */,
 				F71557FD222EF2BB0000F9C9 /* Info.plist */,
 			);
 			path = BrewDogUITests;
@@ -434,6 +433,11 @@
 				TargetAttributes = {
 					F71557D4222EF2B90000F9C9 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					F71557EB222EF2BB0000F9C9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -621,7 +625,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */,
-				F71557FC222EF2BB0000F9C9 /* BrewDogUITests.swift in Sources */,
 				F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */,
 				F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */,
 				F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */,
@@ -778,6 +781,7 @@
 			baseConfigurationReference = 35FE48B37909BA5C7F0D5BCA /* Pods-BrewDog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C5KXDGM4Y;
 				INFOPLIST_FILE = BrewDog/SupportingFiles/Info.plist;
@@ -787,6 +791,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ggm.brewdog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -797,6 +802,7 @@
 			baseConfigurationReference = F38627462F83AB3310865877 /* Pods-BrewDog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C5KXDGM4Y;
 				INFOPLIST_FILE = BrewDog/SupportingFiles/Info.plist;
@@ -806,6 +812,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ggm.brewdog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
