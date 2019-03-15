@@ -98,6 +98,10 @@ extension BeerListCollectionViewController: BeerListViewModelDelegate {
             }
         }
     }
+    
+    func beerListViewModel(_ viewModel: BeerListViewModel, threw error: Error) {
+        HandleError.handle(error: error)
+    }
 }
 
 // MARK: - Flow layout

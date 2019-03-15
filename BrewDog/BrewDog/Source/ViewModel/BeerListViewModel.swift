@@ -15,12 +15,20 @@ protocol BeerListViewModelDelegate: class {
     ///
     /// - Parameter viewModel: BeerListViewModel
     func beerListViewModelWasFetch(_ viewModel: BeerListViewModel)
+    
+    
+    /// Called when some error happen
+    ///
+    /// - Parameters:
+    ///   - viewModel: BeerListViewModel
+    ///   - error: Error
+    func beerListViewModel(_ viewModel: BeerListViewModel, threw error: Error)
 }
 
 class BeerListViewModel {
     weak var delegate: BeerListViewModelDelegate?
     
-    private var beers: [BeerViewModel] = []
+    private(set) var beers: [BeerViewModel] = []
     
     private var page: Int = 0
     private var service: BeerServiceProtocol
@@ -99,12 +107,12 @@ extension BeerListViewModel {
             do {
                 let beerList = try callback()
                 
+                if refresh {
+                    self.beers = []
+                }
                 if beerList.beers.isEmpty {
                     self.fetchCompleted = true
                 } else {
-                    if refresh {
-                        self.beers = []
-                    }
                     self.beers.append(contentsOf: beerList.beers.map({ (beer) -> BeerViewModel in
                         BeerViewModel(beer)
                     }))
@@ -112,7 +120,7 @@ extension BeerListViewModel {
                 
                 self.delegate?.beerListViewModelWasFetch(self)
             } catch {
-                HandleError.handle(error: error)
+                self.delegate?.beerListViewModel(self, threw: error)
                 self.error = true
                 self.page -= 1
                 self.delegate?.beerListViewModelWasFetch(self)

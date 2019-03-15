@@ -42,6 +42,9 @@
 		F79EE17B223B5E48004958F7 /* BrewDogReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE17A223B5E48004958F7 /* BrewDogReachability.swift */; };
 		F79EE17D223B5E97004958F7 /* Reachability+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE17C223B5E97004958F7 /* Reachability+Extensions.swift */; };
 		F79EE17F223B7ED3004958F7 /* BeerParseError.json in Resources */ = {isa = PBXBuildFile; fileRef = F79EE17E223B7ED3004958F7 /* BeerParseError.json */; };
+		F79EE182223C15E7004958F7 /* BeerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE181223C15E7004958F7 /* BeerViewModelTests.swift */; };
+		F79EE184223C187F004958F7 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE183223C187F004958F7 /* BeerListViewModelTests.swift */; };
+		F79EE186223C18C0004958F7 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE185223C18C0004958F7 /* BaseTests.swift */; };
 		F7CA2B9B2231B1F200098ACE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */; };
 		F7CA2B9F2231BA0800098ACE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +115,9 @@
 		F79EE17A223B5E48004958F7 /* BrewDogReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDogReachability.swift; sourceTree = "<group>"; };
 		F79EE17C223B5E97004958F7 /* Reachability+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Extensions.swift"; sourceTree = "<group>"; };
 		F79EE17E223B7ED3004958F7 /* BeerParseError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeerParseError.json; sourceTree = "<group>"; };
+		F79EE181223C15E7004958F7 /* BeerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModelTests.swift; sourceTree = "<group>"; };
+		F79EE183223C187F004958F7 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
+		F79EE185223C18C0004958F7 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +211,7 @@
 			children = (
 				F79EE174223B4C16004958F7 /* Commom */,
 				F79EE173223B4C02004958F7 /* ResponseMocks */,
-				F71557F0222EF2BB0000F9C9 /* BeerServiceTests.swift */,
+				F79EE180223C14DC004958F7 /* Tests */,
 				F71557F2222EF2BB0000F9C9 /* Info.plist */,
 			);
 			path = BrewDogTests;
@@ -406,6 +412,17 @@
 				F79EE17A223B5E48004958F7 /* BrewDogReachability.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F79EE180223C14DC004958F7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F79EE185223C18C0004958F7 /* BaseTests.swift */,
+				F71557F0222EF2BB0000F9C9 /* BeerServiceTests.swift */,
+				F79EE181223C15E7004958F7 /* BeerViewModelTests.swift */,
+				F79EE183223C187F004958F7 /* BeerListViewModelTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,7 +687,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79EE182223C15E7004958F7 /* BeerViewModelTests.swift in Sources */,
 				F79EE178223B5988004958F7 /* ReachabilityMock.swift in Sources */,
+				F79EE186223C18C0004958F7 /* BaseTests.swift in Sources */,
+				F79EE184223C187F004958F7 /* BeerListViewModelTests.swift in Sources */,
 				F79EE176223B4C27004958F7 /* BaseMock.swift in Sources */,
 				F71557F1222EF2BB0000F9C9 /* BeerServiceTests.swift in Sources */,
 			);
