@@ -29,10 +29,16 @@ class BeerService: BeerServiceProtocol {
         static let queryPerPage = "per_page"
     }
     
-    lazy private var reachability = Reachability(hostName: Constants.beerListUrl)
+    private let session: BrewDogURLSession
+    private let reachability: BrewDogReachability
+    
+    init(session: BrewDogURLSession = URLSession.shared, reachability: BrewDogReachability = Reachability(hostName: Constants.beerListUrl)) {
+        self.session = session
+        self.reachability = reachability
+    }
     
     func getBeerList(page: Int, perPage: Int, completion: @escaping ((() throws -> (BeerList)) -> Void)) {
-        guard reachability?.isReachable() ?? false else {
+        guard reachability.internetIsReachable else {
             completion { throw BrewDogError.offlineMode }
             return
         }
@@ -42,26 +48,24 @@ class BeerService: BeerServiceProtocol {
             return
         }
 
-        URLSession.shared.dataTask(with: url) { data, _, error in
+        session.loadData(from: url) { data, _, error in
             if let error = error {
                 print(error.localizedDescription)
                 completion { throw error }
             } else if let data = data {
                 do {
                     let beers = try JSONDecoder().decode([Beer].self, from: data)
-
+                    
                     let beerList = BeerList(beers: beers)
-
+                    
                     completion { beerList }
                 } catch {
                     completion { throw BrewDogError.parse(String(describing: [Beer].self)) }
                 }
             }
-
-            }.resume()
+        }
     }
 }
-
 
 // MARK: - Private methods
 private extension BeerService {

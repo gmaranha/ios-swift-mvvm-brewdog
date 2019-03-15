@@ -13,7 +13,7 @@
 		F71557D9222EF2B90000F9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557D8222EF2B90000F9C9 /* AppDelegate.swift */; };
 		F71557E3222EF2BB0000F9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71557E2222EF2BB0000F9C9 /* Assets.xcassets */; };
 		F71557E6222EF2BB0000F9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71557E4222EF2BB0000F9C9 /* LaunchScreen.storyboard */; };
-		F71557F1222EF2BB0000F9C9 /* BrewDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557F0222EF2BB0000F9C9 /* BrewDogTests.swift */; };
+		F71557F1222EF2BB0000F9C9 /* BeerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557F0222EF2BB0000F9C9 /* BeerServiceTests.swift */; };
 		F7155812222F03900000F9C9 /* Beers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7155811222F03900000F9C9 /* Beers.storyboard */; };
 		F7155815222F05920000F9C9 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7155814222F05920000F9C9 /* BeerListViewModel.swift */; };
 		F7155817222F06890000F9C9 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7155816222F06890000F9C9 /* BeerViewModel.swift */; };
@@ -29,11 +29,19 @@
 		F78729D5223070EB008915D4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D4223070EB008915D4 /* BeerDetailViewController.swift */; };
 		F78729D72230C9B3008915D4 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */; };
 		F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3832238807000BCBDF4 /* BaseTests.swift */; };
-		F799E38B2238807000BCBDF4 /* BrewDogListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3842238807000BCBDF4 /* BrewDogListTests.swift */; };
+		F799E38B2238807000BCBDF4 /* BrewDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3842238807000BCBDF4 /* BrewDogTests.swift */; };
 		F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3862238807000BCBDF4 /* BaseScreen.swift */; };
 		F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3872238807000BCBDF4 /* BeerListScreen.swift */; };
 		F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */; };
 		F799E390223897F400BCBDF4 /* BeerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E38F223897F400BCBDF4 /* BeerScreen.swift */; };
+		F79EE16E223B494F004958F7 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE16D223B494F004958F7 /* URLSession+Extensions.swift */; };
+		F79EE170223B498D004958F7 /* BrewDogURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE16F223B498D004958F7 /* BrewDogURLSession.swift */; };
+		F79EE172223B4BEA004958F7 /* Beer.json in Resources */ = {isa = PBXBuildFile; fileRef = F79EE171223B4BEA004958F7 /* Beer.json */; };
+		F79EE176223B4C27004958F7 /* BaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE175223B4C27004958F7 /* BaseMock.swift */; };
+		F79EE178223B5988004958F7 /* ReachabilityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE177223B5988004958F7 /* ReachabilityMock.swift */; };
+		F79EE17B223B5E48004958F7 /* BrewDogReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE17A223B5E48004958F7 /* BrewDogReachability.swift */; };
+		F79EE17D223B5E97004958F7 /* Reachability+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE17C223B5E97004958F7 /* Reachability+Extensions.swift */; };
+		F79EE17F223B7ED3004958F7 /* BeerParseError.json in Resources */ = {isa = PBXBuildFile; fileRef = F79EE17E223B7ED3004958F7 /* BeerParseError.json */; };
 		F7CA2B9B2231B1F200098ACE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */; };
 		F7CA2B9F2231BA0800098ACE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
@@ -71,7 +79,7 @@
 		F71557E5222EF2BB0000F9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F71557E7222EF2BB0000F9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71557EC222EF2BB0000F9C9 /* BrewDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71557F0222EF2BB0000F9C9 /* BrewDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDogTests.swift; sourceTree = "<group>"; };
+		F71557F0222EF2BB0000F9C9 /* BeerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerServiceTests.swift; sourceTree = "<group>"; };
 		F71557F2222EF2BB0000F9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71557F7222EF2BB0000F9C9 /* BrewDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71557FD222EF2BB0000F9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,12 +98,20 @@
 		F78729D4223070EB008915D4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F799E3832238807000BCBDF4 /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
-		F799E3842238807000BCBDF4 /* BrewDogListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewDogListTests.swift; sourceTree = "<group>"; };
+		F799E3842238807000BCBDF4 /* BrewDogTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewDogTests.swift; sourceTree = "<group>"; };
 		F799E3862238807000BCBDF4 /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		F799E3872238807000BCBDF4 /* BeerListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListScreen.swift; sourceTree = "<group>"; };
 		F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		F799E38F223897F400BCBDF4 /* BeerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerScreen.swift; sourceTree = "<group>"; };
 		F799E391223946C700BCBDF4 /* BrewDog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrewDog.entitlements; sourceTree = "<group>"; };
+		F79EE16D223B494F004958F7 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
+		F79EE16F223B498D004958F7 /* BrewDogURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDogURLSession.swift; sourceTree = "<group>"; };
+		F79EE171223B4BEA004958F7 /* Beer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Beer.json; sourceTree = "<group>"; };
+		F79EE175223B4C27004958F7 /* BaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMock.swift; sourceTree = "<group>"; };
+		F79EE177223B5988004958F7 /* ReachabilityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMock.swift; sourceTree = "<group>"; };
+		F79EE17A223B5E48004958F7 /* BrewDogReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDogReachability.swift; sourceTree = "<group>"; };
+		F79EE17C223B5E97004958F7 /* Reachability+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Extensions.swift"; sourceTree = "<group>"; };
+		F79EE17E223B7ED3004958F7 /* BeerParseError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeerParseError.json; sourceTree = "<group>"; };
 		F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +203,9 @@
 		F71557EF222EF2BB0000F9C9 /* BrewDogTests */ = {
 			isa = PBXGroup;
 			children = (
-				F71557F0222EF2BB0000F9C9 /* BrewDogTests.swift */,
+				F79EE174223B4C16004958F7 /* Commom */,
+				F79EE173223B4C02004958F7 /* ResponseMocks */,
+				F71557F0222EF2BB0000F9C9 /* BeerServiceTests.swift */,
 				F71557F2222EF2BB0000F9C9 /* Info.plist */,
 			);
 			path = BrewDogTests;
@@ -291,8 +309,8 @@
 		F7155820222F0EA40000F9C9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F79EE179223B5E11004958F7 /* Protocols */,
 				F78729D122306B2E008915D4 /* Extensions */,
-				F7155821222F0EC70000F9C9 /* Identifiable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -329,6 +347,8 @@
 				F78729D222306B43008915D4 /* UICollectionView+Extensions.swift */,
 				F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */,
 				F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */,
+				F79EE16D223B494F004958F7 /* URLSession+Extensions.swift */,
+				F79EE17C223B5E97004958F7 /* Reachability+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,7 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				F799E3832238807000BCBDF4 /* BaseTests.swift */,
-				F799E3842238807000BCBDF4 /* BrewDogListTests.swift */,
+				F799E3842238807000BCBDF4 /* BrewDogTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -358,6 +378,34 @@
 				F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		F79EE173223B4C02004958F7 /* ResponseMocks */ = {
+			isa = PBXGroup;
+			children = (
+				F79EE171223B4BEA004958F7 /* Beer.json */,
+				F79EE17E223B7ED3004958F7 /* BeerParseError.json */,
+			);
+			path = ResponseMocks;
+			sourceTree = "<group>";
+		};
+		F79EE174223B4C16004958F7 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				F79EE175223B4C27004958F7 /* BaseMock.swift */,
+				F79EE177223B5988004958F7 /* ReachabilityMock.swift */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		F79EE179223B5E11004958F7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F7155821222F0EC70000F9C9 /* Identifiable.swift */,
+				F79EE16F223B498D004958F7 /* BrewDogURLSession.swift */,
+				F79EE17A223B5E48004958F7 /* BrewDogReachability.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +532,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79EE17F223B7ED3004958F7 /* BeerParseError.json in Resources */,
+				F79EE172223B4BEA004958F7 /* Beer.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,14 +648,18 @@
 				F78729D72230C9B3008915D4 /* UIColor+Extensions.swift in Sources */,
 				F78729C9222F29F1008915D4 /* BeerList.swift in Sources */,
 				F7155815222F05920000F9C9 /* BeerListViewModel.swift in Sources */,
+				F79EE16E223B494F004958F7 /* URLSession+Extensions.swift in Sources */,
+				F79EE17B223B5E48004958F7 /* BrewDogReachability.swift in Sources */,
 				F7CA2B9F2231BA0800098ACE /* ErrorHandler.swift in Sources */,
 				F78729C6222F2974008915D4 /* BeerService.swift in Sources */,
 				F78729D022306419008915D4 /* BeerLoadingCollectionViewCell.swift in Sources */,
+				F79EE170223B498D004958F7 /* BrewDogURLSession.swift in Sources */,
 				F715581A222F08320000F9C9 /* BeerListCollectionViewController.swift in Sources */,
 				F78729D5223070EB008915D4 /* BeerDetailViewController.swift in Sources */,
 				F7155822222F0EC70000F9C9 /* Identifiable.swift in Sources */,
 				F78729CE222F2C7E008915D4 /* Errors.swift in Sources */,
 				F78729CB222F2A02008915D4 /* Beer.swift in Sources */,
+				F79EE17D223B5E97004958F7 /* Reachability+Extensions.swift in Sources */,
 				F78729D322306B43008915D4 /* UICollectionView+Extensions.swift in Sources */,
 				F71557D9222EF2B90000F9C9 /* AppDelegate.swift in Sources */,
 				F715581D222F09470000F9C9 /* BeerCollectionViewCell.swift in Sources */,
@@ -616,7 +670,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71557F1222EF2BB0000F9C9 /* BrewDogTests.swift in Sources */,
+				F79EE178223B5988004958F7 /* ReachabilityMock.swift in Sources */,
+				F79EE176223B4C27004958F7 /* BaseMock.swift in Sources */,
+				F71557F1222EF2BB0000F9C9 /* BeerServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +685,7 @@
 				F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */,
 				F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */,
 				F799E390223897F400BCBDF4 /* BeerScreen.swift in Sources */,
-				F799E38B2238807000BCBDF4 /* BrewDogListTests.swift in Sources */,
+				F799E38B2238807000BCBDF4 /* BrewDogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
