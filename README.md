@@ -6,7 +6,7 @@ Application developed using [Punk API](https://punkapi.com)
 
 ## Requirements
 
- - Xcode 12
+ - Xcode 10
  - Swift 4.2
  - Cocoapods 1.5.3
 
