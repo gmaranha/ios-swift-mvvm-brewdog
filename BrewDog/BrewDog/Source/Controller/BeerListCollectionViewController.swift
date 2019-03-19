@@ -11,6 +11,7 @@ import UIKit
 class BeerListCollectionViewController: UICollectionViewController {
     struct Constants {
         static let cellsPerRow: Int = 2
+        static let loadingCellHeight: CGFloat = 50
         static let insets: CGFloat = 16
         static let margins: CGFloat = CGFloat(cellsPerRow + 1) * insets
         static let marginsLoading: CGFloat = 2 * insets
@@ -117,7 +118,7 @@ extension BeerListCollectionViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: height)
         case .loading:
             let width = (collectionView.frame.width - Constants.marginsLoading)
-            return CGSize(width: width, height: 50)
+            return CGSize(width: width, height: Constants.loadingCellHeight)
         }
     }
     

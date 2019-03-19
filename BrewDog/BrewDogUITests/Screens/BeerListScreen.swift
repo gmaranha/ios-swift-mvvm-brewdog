@@ -10,15 +10,19 @@ import XCTest
 
 class BeerListScreen: BaseScreen {
     private struct ElementsIds {
-        static let beerLoadText = "Buzz"
+        static let visibleBeerLoadText = "Buzz"
+        static let notVisibleBeerLoadText = "Bramling X"
     }
     
     static var screen: XCUIElement {
         return XCUIApplication().collectionViews["BeerListScreen"]
     }
     
-    static func beerCell() -> XCUIElement {
-        let cell = screen.cells.element(boundBy: 0).staticTexts[ElementsIds.beerLoadText]
-        return cell
+    static func visibleBeerCell() -> XCUIElement {
+        return screen.cells.containing(.staticText, identifier: ElementsIds.visibleBeerLoadText).firstMatch
+    }
+    
+    static func notVisibleBeerCell() -> XCUIElement {
+        return screen.cells.containing(.staticText, identifier: ElementsIds.notVisibleBeerLoadText).firstMatch
     }
 }

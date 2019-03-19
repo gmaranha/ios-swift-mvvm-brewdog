@@ -17,7 +17,7 @@ protocol BeerListViewModelDelegate: class {
     func beerListViewModelWasFetch(_ viewModel: BeerListViewModel)
     
     
-    /// Called when some error happen
+    /// Called when some error happens
     ///
     /// - Parameters:
     ///   - viewModel: BeerListViewModel
@@ -44,7 +44,7 @@ class BeerListViewModel {
 // MARK: - Private
 private extension BeerListViewModel {
     struct Constants {
-        static let pageSize: Int = 24
+        static let pageSize: Int = 8
     }
     
     func refresh() {

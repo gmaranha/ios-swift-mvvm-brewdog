@@ -26,7 +26,7 @@ class BaseMock {
     /// Base response Mock used in Mock protocols
     ///
     /// - Returns: Optional Data
-    /// - Throws: Business Error
+    /// - Throws: Error
     func loadResponse() throws -> Data? {
         if let error = self.error {
             throw error
@@ -37,7 +37,8 @@ class BaseMock {
     
     /// Load json from file
     ///
-    /// - Returns: Optional Data
+    /// - Returns: Data
+    /// - Throws: Error
     func json() throws -> Data {
         if let path = Bundle(for: BaseMock.self).path(forResource: file, ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))

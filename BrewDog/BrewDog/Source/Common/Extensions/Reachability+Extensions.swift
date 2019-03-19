@@ -8,7 +8,11 @@
 
 import Reachability
 
+
+// MARK: - BrewDogReachability
 extension Reachability: BrewDogReachability {
+    
+    /// True if internet is reachable
     var internetIsReachable: Bool {
         return isReachable()
     }

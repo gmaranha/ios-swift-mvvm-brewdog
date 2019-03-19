@@ -120,7 +120,7 @@ class BeerListViewModelTests: BaseTests {
         let beerServiceMock = BeerServiceMock(beerList: beerList) { (page, perPage) in
             expectation.fulfill()
             XCTAssertEqual(page, 1)
-            XCTAssertEqual(perPage, 24)
+            XCTAssertEqual(perPage, 8)
         }
         let vm = BeerListViewModel(beerService: beerServiceMock)
         
@@ -139,7 +139,7 @@ class BeerListViewModelTests: BaseTests {
         beerServiceMock.paramsAssertion = { (page, perPage) in
             expectation.fulfill()
             XCTAssertEqual(page, 2)
-            XCTAssertEqual(perPage, 24)
+            XCTAssertEqual(perPage, 8)
         }
         
         //Act
@@ -157,7 +157,7 @@ class BeerListViewModelTests: BaseTests {
         beerServiceMock.paramsAssertion = { (page, perPage) in
             expectation.fulfill()
             XCTAssertEqual(page, 1)
-            XCTAssertEqual(perPage, 24)
+            XCTAssertEqual(perPage, 8)
         }
         
         //Act

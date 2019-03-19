@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-// MARK: - Palette colors
+// MARK: - Collor palette
 extension UIColor {
     static var gunmetal: UIColor {
         return UIColor(displayP3Red: 43.0/255.0, green: 48.0/255.0, blue: 58.0/255.0, alpha: 1)

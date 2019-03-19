@@ -13,14 +13,26 @@ extension XCTestCase {
     ///
     /// - Parameters:
     ///   - element: Current element
+    ///   - scrollElement: Elemento to scroll to search
     ///   - timeout: Optional timeout. Default value is 10 seconds.
-    func waitElementExists(element: XCUIElement, timeout: TimeInterval = 5) {
-        XCTAssertTrue(element.waitForExistence(timeout: timeout), "Element \"\(element)\" was not found")
-//        let exists = NSPredicate { (element, _) -> Bool in
-//            (element as? XCUIElement)?.exists ?? false
-//        }
-//
-//        expectation(for: exists, evaluatedWith: element, handler: nil)
-//        waitForExpectations(timeout: timeout, handler: nil)
+    ///   - scrollAttempts: Attempts. Default is 3
+    func waitElementExists(element: XCUIElement,
+                           scrollElement: XCUIElement? = nil,
+                           timeout: TimeInterval = 5,
+                           scrollAttempts: Int = 3) {
+        
+        var exists = element.waitForExistence(timeout: timeout)
+        
+        if let scrollElement = scrollElement {
+            for _ in 2...scrollAttempts {
+                if exists {
+                    return
+                }
+                scrollElement.swipeUp()
+                exists = element.waitForExistence(timeout: timeout)
+            }
+        }
+        
+        XCTAssertTrue(exists, "Element \"\(element)\" was not found")
     }
 }
