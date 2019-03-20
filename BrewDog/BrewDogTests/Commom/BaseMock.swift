@@ -28,7 +28,7 @@ class BaseMock {
     /// - Returns: Optional Data
     /// - Throws: Error
     func loadResponse() throws -> Data? {
-        if let error = self.error {
+        if let error = error {
             throw error
         }
         

@@ -48,7 +48,7 @@ class BeerServiceTests: BaseTests {
         }
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
     }
     
     
@@ -70,7 +70,7 @@ class BeerServiceTests: BaseTests {
         }
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
     }
     
     func testParseError() {
@@ -90,7 +90,7 @@ class BeerServiceTests: BaseTests {
         }
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
     }
     
     func testSuccess() {
@@ -109,7 +109,7 @@ class BeerServiceTests: BaseTests {
         }
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
         XCTAssertEqual(beerList.beers.count, 1)
         XCTAssertEqual(beerList.beers[0].id, 1)
         XCTAssertEqual(beerList.beers[0].imageURL, "https://images.punkapi.com/v2/keg.png")
@@ -135,6 +135,6 @@ class BeerServiceTests: BaseTests {
         service.getBeerList(page: 2, perPage: 4) { _ in }
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
     }
 }

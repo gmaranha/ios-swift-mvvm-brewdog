@@ -15,8 +15,8 @@ extension UIImageView {
     /// Set default placeholder 
     func setImagePlaceHolder() {
         let placeholder = UIImage(named: "image-placeholder")
-        self.image = placeholder
-        self.contentMode = .center
+        image = placeholder
+        contentMode = .center
     }
     
     
@@ -24,14 +24,15 @@ extension UIImageView {
     ///
     /// - Parameter stringURL: URL
     func setImage(with stringURL: String) {
-        self.setImagePlaceHolder()
+        setImagePlaceHolder()
         
         let url = URL(string: stringURL)
         
-        self.kf.setImage(with: url,
-                         placeholder: self.image) { result in
+        kf.setImage(with: url,
+                         placeholder: image) { [weak self] result in
                             if case .success = result {
-                                self.contentMode = .scaleAspectFit
+                                guard let weakSelf = self else { return }
+                                weakSelf.contentMode = .scaleAspectFit
                             }
         }
     }

@@ -17,7 +17,7 @@ protocol BeerListViewModelDelegate: class {
     func beerListViewModelWasFetch(_ viewModel: BeerListViewModel)
     
     
-    /// Called when some error happens
+    /// Called when some error happen
     ///
     /// - Parameters:
     ///   - viewModel: BeerListViewModel
@@ -103,29 +103,31 @@ extension BeerListViewModel {
         error = false
         page += 1
         isFetching = true
-        service.getBeerList(page: page, perPage: Constants.pageSize) { callback in
+        service.getBeerList(page: page, perPage: Constants.pageSize) { [weak self] (callback) in
+            guard let weakSelf = self else { return }
             do {
+                
                 let beerList = try callback()
                 
                 if refresh {
-                    self.beers = []
+                    weakSelf.beers = []
                 }
                 if beerList.beers.isEmpty {
-                    self.fetchCompleted = true
+                    weakSelf.fetchCompleted = true
                 } else {
-                    self.beers.append(contentsOf: beerList.beers.map({ (beer) -> BeerViewModel in
+                    weakSelf.beers.append(contentsOf: beerList.beers.map({ (beer) -> BeerViewModel in
                         BeerViewModel(beer)
                     }))
                 }
                 
-                self.delegate?.beerListViewModelWasFetch(self)
+                weakSelf.delegate?.beerListViewModelWasFetch(weakSelf)
             } catch {
-                self.delegate?.beerListViewModel(self, threw: error)
-                self.error = true
-                self.page -= 1
-                self.delegate?.beerListViewModelWasFetch(self)
+                weakSelf.delegate?.beerListViewModel(weakSelf, threw: error)
+                weakSelf.error = true
+                weakSelf.page -= 1
+                weakSelf.delegate?.beerListViewModelWasFetch(weakSelf)
             }
-            self.isFetching = false
+            weakSelf.isFetching = false
         }
     }
 }

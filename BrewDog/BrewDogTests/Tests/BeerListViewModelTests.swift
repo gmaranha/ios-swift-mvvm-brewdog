@@ -24,9 +24,9 @@ class BeerServiceMock: BeerServiceProtocol {
     
     func getBeerList(page: Int, perPage: Int, completion: @escaping ((() throws -> (BeerList)) -> Void)) {
         paramsAssertion?(page, perPage)
-        if let error = self.error {
+        if let error = error {
             completion { throw error }
-        } else if let beerList = self.beerList {
+        } else if let beerList = beerList {
             completion { beerList }
         }
     }
@@ -77,7 +77,7 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch()
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
         XCTAssertEqual(vm.beers.count, beerList.beers.count)
         XCTAssertEqual(vm.beers.first?.id, beer.id)
         XCTAssertEqual(vm.beers.first?.imageURL, beer.imageURL)
@@ -107,7 +107,7 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch()
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
 
     }
     
@@ -128,7 +128,7 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch()
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
         
         
         
@@ -146,7 +146,7 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch()
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
         
         
         
@@ -164,7 +164,7 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch(refresh: true)
         
         //Assert
-        self.waitForExpectations(timeout: 1)
+        waitForExpectations(timeout: 1)
     }
     
     func testCellsTypeWithLoading() {

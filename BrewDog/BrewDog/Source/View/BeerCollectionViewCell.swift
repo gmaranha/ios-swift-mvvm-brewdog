@@ -18,13 +18,13 @@ class BeerCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super .awakeFromNib()
         
-        self.layer.cornerRadius = 4
-        self.layer.masksToBounds = false
-        self.clipsToBounds = false
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 1, height: 1)
-        self.layer.shadowRadius = 1
-        self.layer.shadowOpacity = 0.2
+        layer.cornerRadius = 4
+        layer.masksToBounds = false
+        clipsToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 1, height: 1)
+        layer.shadowRadius = 1
+        layer.shadowOpacity = 0.2
     }
     
     override func prepareForReuse() {
