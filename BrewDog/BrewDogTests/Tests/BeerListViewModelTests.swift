@@ -149,7 +149,6 @@ class BeerListViewModelTests: BaseTests {
         waitForExpectations(timeout: 1)
         
         
-        
         //Refresh
         
         //Arrange
@@ -168,8 +167,6 @@ class BeerListViewModelTests: BaseTests {
     }
     
     func testCellsTypeWithLoading() {
-        //First page
-        
         //Arrange
         let beer = Beer(id: 221,
                         imageURL: "image url",
@@ -196,8 +193,6 @@ class BeerListViewModelTests: BaseTests {
     }
     
     func testCellsTypeWithoutLoading() {
-        //First page
-        
         //Arrange
         let beer = Beer(id: 221,
                         imageURL: "image url",
@@ -226,8 +221,6 @@ class BeerListViewModelTests: BaseTests {
     }
     
     func testCellsRefresh() {
-        //First page
-        
         //Arrange
         let beer = Beer(id: 221,
                         imageURL: "image url",
@@ -236,14 +229,14 @@ class BeerListViewModelTests: BaseTests {
                         alcoholByVolume: 20,
                         internationalBitternessUnits: 10,
                         description: "description")
-        let beerListFirstPage = BeerList(beers: [beer])
-        let beerListSecondPage = BeerList(beers: [])
-        let beerServiceMock = BeerServiceMock(beerList: beerListFirstPage)
+        let beerListBeforeRefresh = BeerList(beers: [beer])
+        let beerListAfterRefresh = BeerList(beers: [])
+        let beerServiceMock = BeerServiceMock(beerList: beerListBeforeRefresh)
         let vm = BeerListViewModel(beerService: beerServiceMock)
         
         //Act
         vm.fetch()
-        beerServiceMock.beerList = beerListSecondPage
+        beerServiceMock.beerList = beerListAfterRefresh
         vm.fetch(refresh: true)
         
         //Assert
