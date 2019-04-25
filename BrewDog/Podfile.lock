@@ -1,5 +1,5 @@
 PODS:
-  - Kingfisher (5.2.0)
+  - Kingfisher (5.4.0)
   - Reachability (3.2)
   - SwiftLint (0.30.1)
   - SwiftMessages (6.0.2):
@@ -20,11 +20,11 @@ SPEC REPOS:
     - SwiftMessages
 
 SPEC CHECKSUMS:
-  Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
   SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
 
-PODFILE CHECKSUM: 5fd27aa4ee64c16888ca88bc47df6e70a7b4a914
+PODFILE CHECKSUM: 13474454f347d0d7c89dd971429ceb1f7bb42841
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19A6E9D16822EDADD2F3984E /* Pods_BrewDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EA00682CA2F7B88E3D5C75 /* Pods_BrewDog.framework */; };
-		2F55758BC0B82A982B0728FA /* Pods_BrewDogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD83E0B2A70A17EF843C32 /* Pods_BrewDogUITests.framework */; };
-		791CEFB65A88C5A6EC21FD7D /* Pods_BrewDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36ACB32B45E7F860942273F0 /* Pods_BrewDogTests.framework */; };
+		ADA6D4FBC0DCEAA92B3FE1EC /* Pods_BrewDog_BrewDogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38D56BAD9C3DB9983D177B /* Pods_BrewDog_BrewDogUITests.framework */; };
+		BDA8B24F6D2EBAD6E5F9F075 /* Pods_BrewDog_BrewDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3264075B689D3B1D8C2A31E4 /* Pods_BrewDog_BrewDogTests.framework */; };
+		C365C09E7CDAEC1DAB5C3282 /* Pods_BrewDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D191F7252D7162B5495A75 /* Pods_BrewDog.framework */; };
 		F71557D9222EF2B90000F9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557D8222EF2B90000F9C9 /* AppDelegate.swift */; };
 		F71557E3222EF2BB0000F9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71557E2222EF2BB0000F9C9 /* Assets.xcassets */; };
 		F71557E6222EF2BB0000F9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71557E4222EF2BB0000F9C9 /* LaunchScreen.storyboard */; };
@@ -67,15 +67,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26A79F370B70610728FDEFA2 /* Pods-BrewDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrewDogTests/Pods-BrewDogTests.release.xcconfig"; sourceTree = "<group>"; };
-		2FFD83E0B2A70A17EF843C32 /* Pods_BrewDogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35FE48B37909BA5C7F0D5BCA /* Pods-BrewDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrewDog/Pods-BrewDog.debug.xcconfig"; sourceTree = "<group>"; };
-		36ACB32B45E7F860942273F0 /* Pods_BrewDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EA00682CA2F7B88E3D5C75 /* Pods_BrewDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3C9375D4F48D864E5009130 /* Pods-BrewDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrewDogTests/Pods-BrewDogTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A78A43CA0C8494C7E92D362C /* Pods-BrewDogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrewDogUITests/Pods-BrewDogUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B88502E227B9D5615735228D /* Pods-BrewDogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrewDogUITests/Pods-BrewDogUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F38627462F83AB3310865877 /* Pods-BrewDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrewDog/Pods-BrewDog.release.xcconfig"; sourceTree = "<group>"; };
+		19D191F7252D7162B5495A75 /* Pods_BrewDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3264075B689D3B1D8C2A31E4 /* Pods_BrewDog_BrewDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog_BrewDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1195BB20C46896D27B43BE /* Pods-BrewDog-BrewDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogTests.release.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FF194E9060058059BF5A15F /* Pods-BrewDog-BrewDogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogUITests.release.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		678B251D548992459FEC126A /* Pods-BrewDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.debug.xcconfig"; sourceTree = "<group>"; };
+		7C443084C47BB417CD1C5512 /* Pods-BrewDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.release.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.release.xcconfig"; sourceTree = "<group>"; };
+		7CC19DA02F1CA40803B9EF97 /* Pods-BrewDog-BrewDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogTests.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D38D56BAD9C3DB9983D177B /* Pods_BrewDog_BrewDogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog_BrewDogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A5F238DA90338949565184 /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F71557D5222EF2B90000F9C9 /* BrewDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71557D8222EF2B90000F9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F71557E2222EF2BB0000F9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19A6E9D16822EDADD2F3984E /* Pods_BrewDog.framework in Frameworks */,
+				C365C09E7CDAEC1DAB5C3282 /* Pods_BrewDog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				791CEFB65A88C5A6EC21FD7D /* Pods_BrewDogTests.framework in Frameworks */,
+				BDA8B24F6D2EBAD6E5F9F075 /* Pods_BrewDog_BrewDogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,32 +143,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F55758BC0B82A982B0728FA /* Pods_BrewDogUITests.framework in Frameworks */,
+				ADA6D4FBC0DCEAA92B3FE1EC /* Pods_BrewDog_BrewDogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15EE50C8A6D89B3BBBF7940F /* Pods */ = {
+		C0F87E03C5A6833ED7267392 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				35FE48B37909BA5C7F0D5BCA /* Pods-BrewDog.debug.xcconfig */,
-				F38627462F83AB3310865877 /* Pods-BrewDog.release.xcconfig */,
-				A3C9375D4F48D864E5009130 /* Pods-BrewDogTests.debug.xcconfig */,
-				26A79F370B70610728FDEFA2 /* Pods-BrewDogTests.release.xcconfig */,
-				B88502E227B9D5615735228D /* Pods-BrewDogUITests.debug.xcconfig */,
-				A78A43CA0C8494C7E92D362C /* Pods-BrewDogUITests.release.xcconfig */,
+				678B251D548992459FEC126A /* Pods-BrewDog.debug.xcconfig */,
+				7C443084C47BB417CD1C5512 /* Pods-BrewDog.release.xcconfig */,
+				7CC19DA02F1CA40803B9EF97 /* Pods-BrewDog-BrewDogTests.debug.xcconfig */,
+				3B1195BB20C46896D27B43BE /* Pods-BrewDog-BrewDogTests.release.xcconfig */,
+				A4A5F238DA90338949565184 /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */,
+				4FF194E9060058059BF5A15F /* Pods-BrewDog-BrewDogUITests.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		F70DCAF56A877F9AD4AEF01F /* Frameworks */ = {
+		CCE326465AD440B85C3AEFC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				90EA00682CA2F7B88E3D5C75 /* Pods_BrewDog.framework */,
-				36ACB32B45E7F860942273F0 /* Pods_BrewDogTests.framework */,
-				2FFD83E0B2A70A17EF843C32 /* Pods_BrewDogUITests.framework */,
+				19D191F7252D7162B5495A75 /* Pods_BrewDog.framework */,
+				3264075B689D3B1D8C2A31E4 /* Pods_BrewDog_BrewDogTests.framework */,
+				9D38D56BAD9C3DB9983D177B /* Pods_BrewDog_BrewDogUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,8 +181,8 @@
 				F71557EF222EF2BB0000F9C9 /* BrewDogTests */,
 				F71557FA222EF2BB0000F9C9 /* BrewDogUITests */,
 				F71557D6222EF2B90000F9C9 /* Products */,
-				15EE50C8A6D89B3BBBF7940F /* Pods */,
-				F70DCAF56A877F9AD4AEF01F /* Frameworks */,
+				C0F87E03C5A6833ED7267392 /* Pods */,
+				CCE326465AD440B85C3AEFC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -432,12 +433,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7155800222EF2BB0000F9C9 /* Build configuration list for PBXNativeTarget "BrewDog" */;
 			buildPhases = (
-				872C07E4C9E37CBD83411A4F /* [CP] Check Pods Manifest.lock */,
+				61DD193F1C9A60F2DBAA36E5 /* [CP] Check Pods Manifest.lock */,
 				F71557D1222EF2B90000F9C9 /* Sources */,
 				F71557D2222EF2B90000F9C9 /* Frameworks */,
 				F71557D3222EF2B90000F9C9 /* Resources */,
 				F7155809222EF4190000F9C9 /* ShellScript */,
-				73DCD5050C46E40E555B00B3 /* [CP] Embed Pods Frameworks */,
+				521FD2612D722B1873F8E216 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -452,10 +453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7155803222EF2BB0000F9C9 /* Build configuration list for PBXNativeTarget "BrewDogTests" */;
 			buildPhases = (
-				8E5A5AB09A785860140256FE /* [CP] Check Pods Manifest.lock */,
+				A4DF2A344633CC0F554EAF40 /* [CP] Check Pods Manifest.lock */,
 				F71557E8222EF2BB0000F9C9 /* Sources */,
 				F71557E9222EF2BB0000F9C9 /* Frameworks */,
 				F71557EA222EF2BB0000F9C9 /* Resources */,
+				3FAB41FD02C3EDB2916C2F03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -471,10 +473,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7155806222EF2BB0000F9C9 /* Build configuration list for PBXNativeTarget "BrewDogUITests" */;
 			buildPhases = (
-				430A0F65745C9E2F06FEF870 /* [CP] Check Pods Manifest.lock */,
+				20A9779A4DE589D91C401AE0 /* [CP] Check Pods Manifest.lock */,
 				F71557F3222EF2BB0000F9C9 /* Sources */,
 				F71557F4222EF2BB0000F9C9 /* Frameworks */,
 				F71557F5222EF2BB0000F9C9 /* Resources */,
+				B448D8AD81FF989A9C59D148 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -564,36 +567,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		430A0F65745C9E2F06FEF870 /* [CP] Check Pods Manifest.lock */ = {
+		20A9779A4DE589D91C401AE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BrewDogUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrewDog-BrewDogUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		73DCD5050C46E40E555B00B3 /* [CP] Embed Pods Frameworks */ = {
+		3FAB41FD02C3EDB2916C2F03 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BrewDog/Pods-BrewDog-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
@@ -601,19 +612,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrewDog/Pods-BrewDog-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		872C07E4C9E37CBD83411A4F /* [CP] Check Pods Manifest.lock */ = {
+		521FD2612D722B1873F8E216 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewDog/Pods-BrewDog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewDog/Pods-BrewDog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61DD193F1C9A60F2DBAA36E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BrewDog-checkManifestLockResult.txt",
 			);
@@ -622,22 +663,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E5A5AB09A785860140256FE /* [CP] Check Pods Manifest.lock */ = {
+		A4DF2A344633CC0F554EAF40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BrewDogTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrewDog-BrewDogTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B448D8AD81FF989A9C59D148 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7155809222EF4190000F9C9 /* ShellScript */ = {
@@ -854,7 +925,7 @@
 		};
 		F7155801222EF2BB0000F9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35FE48B37909BA5C7F0D5BCA /* Pods-BrewDog.debug.xcconfig */;
+			baseConfigurationReference = 678B251D548992459FEC126A /* Pods-BrewDog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -875,7 +946,7 @@
 		};
 		F7155802222EF2BB0000F9C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38627462F83AB3310865877 /* Pods-BrewDog.release.xcconfig */;
+			baseConfigurationReference = 7C443084C47BB417CD1C5512 /* Pods-BrewDog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -896,9 +967,8 @@
 		};
 		F7155804222EF2BB0000F9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3C9375D4F48D864E5009130 /* Pods-BrewDogTests.debug.xcconfig */;
+			baseConfigurationReference = 7CC19DA02F1CA40803B9EF97 /* Pods-BrewDog-BrewDogTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogTests/Info.plist;
@@ -917,9 +987,8 @@
 		};
 		F7155805222EF2BB0000F9C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26A79F370B70610728FDEFA2 /* Pods-BrewDogTests.release.xcconfig */;
+			baseConfigurationReference = 3B1195BB20C46896D27B43BE /* Pods-BrewDog-BrewDogTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogTests/Info.plist;
@@ -938,9 +1007,8 @@
 		};
 		F7155807222EF2BB0000F9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B88502E227B9D5615735228D /* Pods-BrewDogUITests.debug.xcconfig */;
+			baseConfigurationReference = A4A5F238DA90338949565184 /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -958,9 +1026,8 @@
 		};
 		F7155808222EF2BB0000F9C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78A43CA0C8494C7E92D362C /* Pods-BrewDogUITests.release.xcconfig */;
+			baseConfigurationReference = 4FF194E9060058059BF5A15F /* Pods-BrewDog-BrewDogUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

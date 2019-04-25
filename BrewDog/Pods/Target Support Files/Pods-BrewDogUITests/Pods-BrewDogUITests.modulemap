@@ -1,6 +1,0 @@
-framework module Pods_BrewDogUITests {
-  umbrella header "Pods-BrewDogUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

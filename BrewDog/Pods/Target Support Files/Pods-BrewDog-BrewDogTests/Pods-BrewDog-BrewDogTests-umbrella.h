@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BrewDogUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BrewDogUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_BrewDog_BrewDogTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_BrewDog_BrewDogTestsVersionString[];
 
