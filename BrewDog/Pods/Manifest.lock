@@ -1,5 +1,16 @@
 PODS:
+  - iOSSnapshotTestCase (6.0.3):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.3)
+  - iOSSnapshotTestCase/Core (6.0.3)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.3):
+    - iOSSnapshotTestCase/Core
   - Kingfisher (5.4.0)
+  - Nimble (8.0.1)
+  - Nimble-Snapshots (7.0.0):
+    - Nimble-Snapshots/Core (= 7.0.0)
+  - Nimble-Snapshots/Core (7.0.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
   - Reachability (3.2)
   - SwiftLint (0.30.1)
   - SwiftMessages (6.0.2):
@@ -7,24 +18,32 @@ PODS:
   - SwiftMessages/App (6.0.2)
 
 DEPENDENCIES:
+  - iOSSnapshotTestCase
   - Kingfisher (~> 5.1)
+  - Nimble-Snapshots
   - Reachability (~> 3.2)
   - SwiftLint (~> 0.30.1)
   - SwiftMessages (~> 6.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
     - Kingfisher
+    - Nimble
+    - Nimble-Snapshots
     - Reachability
     - SwiftLint
     - SwiftMessages
 
 SPEC CHECKSUMS:
+  iOSSnapshotTestCase: 944a73f6d9676302811a86c0cf35f0e6ef5ab2a0
   Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Nimble-Snapshots: 2d6d712ceb2d1850d88f850fbd7c732618106022
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
   SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
 
-PODFILE CHECKSUM: 13474454f347d0d7c89dd971429ceb1f7bb42841
+PODFILE CHECKSUM: 18efa8fee1dd2bf35a4f5ecc1dafbd4e17a308f4
 
 COCOAPODS: 1.6.1

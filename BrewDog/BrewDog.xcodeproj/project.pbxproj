@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADA6D4FBC0DCEAA92B3FE1EC /* Pods_BrewDog_BrewDogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38D56BAD9C3DB9983D177B /* Pods_BrewDog_BrewDogUITests.framework */; };
-		BDA8B24F6D2EBAD6E5F9F075 /* Pods_BrewDog_BrewDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3264075B689D3B1D8C2A31E4 /* Pods_BrewDog_BrewDogTests.framework */; };
-		C365C09E7CDAEC1DAB5C3282 /* Pods_BrewDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D191F7252D7162B5495A75 /* Pods_BrewDog.framework */; };
+		61E9F2BA55B6CE71AF03F194 /* Pods_BrewDog_BrewDogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBB4D54750034B0449D8A97 /* Pods_BrewDog_BrewDogUITests.framework */; };
+		9C67078CCE2BDA24AA205473 /* Pods_BrewDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E02D0EA5F1DB8054E825BA /* Pods_BrewDog.framework */; };
+		DE9D3D933F105BF6FB6513CA /* Pods_BrewDog_BrewDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF504687E873FE483D965C60 /* Pods_BrewDog_BrewDogTests.framework */; };
 		F71557D9222EF2B90000F9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71557D8222EF2B90000F9C9 /* AppDelegate.swift */; };
 		F71557E3222EF2BB0000F9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71557E2222EF2BB0000F9C9 /* Assets.xcassets */; };
 		F71557E6222EF2BB0000F9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71557E4222EF2BB0000F9C9 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		F715581A222F08320000F9C9 /* BeerListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7155819222F08320000F9C9 /* BeerListCollectionViewController.swift */; };
 		F715581D222F09470000F9C9 /* BeerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F715581C222F09470000F9C9 /* BeerCollectionViewCell.swift */; };
 		F7155822222F0EC70000F9C9 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7155821222F0EC70000F9C9 /* Identifiable.swift */; };
+		F716EB7F227887BE004A703A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F716EB7E227887BE004A703A /* Coordinator.swift */; };
+		F7610D092273781100737A93 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7610D082273781100737A93 /* UIImage+Extensions.swift */; };
 		F78729C6222F2974008915D4 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729C5222F2974008915D4 /* BeerService.swift */; };
 		F78729C9222F29F1008915D4 /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729C8222F29F1008915D4 /* BeerList.swift */; };
 		F78729CB222F2A02008915D4 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729CA222F2A02008915D4 /* Beer.swift */; };
@@ -67,15 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19D191F7252D7162B5495A75 /* Pods_BrewDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3264075B689D3B1D8C2A31E4 /* Pods_BrewDog_BrewDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog_BrewDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B1195BB20C46896D27B43BE /* Pods-BrewDog-BrewDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogTests.release.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests.release.xcconfig"; sourceTree = "<group>"; };
-		4FF194E9060058059BF5A15F /* Pods-BrewDog-BrewDogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogUITests.release.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests.release.xcconfig"; sourceTree = "<group>"; };
-		678B251D548992459FEC126A /* Pods-BrewDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.debug.xcconfig"; sourceTree = "<group>"; };
-		7C443084C47BB417CD1C5512 /* Pods-BrewDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.release.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.release.xcconfig"; sourceTree = "<group>"; };
-		7CC19DA02F1CA40803B9EF97 /* Pods-BrewDog-BrewDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogTests.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D38D56BAD9C3DB9983D177B /* Pods_BrewDog_BrewDogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog_BrewDogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4A5F238DA90338949565184 /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37E02D0EA5F1DB8054E825BA /* Pods_BrewDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78494F04C96D5CE0317A2443 /* Pods-BrewDog-BrewDogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogUITests.release.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9754689612016A5C41EBB44B /* Pods-BrewDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.debug.xcconfig"; sourceTree = "<group>"; };
+		9D73A7D5CD2BA83317D33BEB /* Pods-BrewDog-BrewDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogTests.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF504687E873FE483D965C60 /* Pods_BrewDog_BrewDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog_BrewDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBB4D54750034B0449D8A97 /* Pods_BrewDog_BrewDogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewDog_BrewDogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7133A7D7364CC115E82995F /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogUITests/Pods-BrewDog-BrewDogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EABFFF9602A1EED2D4F9C450 /* Pods-BrewDog-BrewDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog-BrewDogTests.release.xcconfig"; path = "Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests.release.xcconfig"; sourceTree = "<group>"; };
 		F71557D5222EF2B90000F9C9 /* BrewDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71557D8222EF2B90000F9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F71557E2222EF2BB0000F9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +93,8 @@
 		F7155819222F08320000F9C9 /* BeerListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCollectionViewController.swift; sourceTree = "<group>"; };
 		F715581C222F09470000F9C9 /* BeerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7155821222F0EC70000F9C9 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		F716EB7E227887BE004A703A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F7610D082273781100737A93 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		F78729C5222F2974008915D4 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
 		F78729C8222F29F1008915D4 /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
 		F78729CA222F2A02008915D4 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 		F79EE185223C18C0004958F7 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		FD36807A277D6D5CD75D9FE2 /* Pods-BrewDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.release.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C365C09E7CDAEC1DAB5C3282 /* Pods_BrewDog.framework in Frameworks */,
+				9C67078CCE2BDA24AA205473 /* Pods_BrewDog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA8B24F6D2EBAD6E5F9F075 /* Pods_BrewDog_BrewDogTests.framework in Frameworks */,
+				DE9D3D933F105BF6FB6513CA /* Pods_BrewDog_BrewDogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,35 +147,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA6D4FBC0DCEAA92B3FE1EC /* Pods_BrewDog_BrewDogUITests.framework in Frameworks */,
+				61E9F2BA55B6CE71AF03F194 /* Pods_BrewDog_BrewDogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93984D3A3E6DE7DF89354F72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E02D0EA5F1DB8054E825BA /* Pods_BrewDog.framework */,
+				AF504687E873FE483D965C60 /* Pods_BrewDog_BrewDogTests.framework */,
+				BCBB4D54750034B0449D8A97 /* Pods_BrewDog_BrewDogUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0F87E03C5A6833ED7267392 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				678B251D548992459FEC126A /* Pods-BrewDog.debug.xcconfig */,
-				7C443084C47BB417CD1C5512 /* Pods-BrewDog.release.xcconfig */,
-				7CC19DA02F1CA40803B9EF97 /* Pods-BrewDog-BrewDogTests.debug.xcconfig */,
-				3B1195BB20C46896D27B43BE /* Pods-BrewDog-BrewDogTests.release.xcconfig */,
-				A4A5F238DA90338949565184 /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */,
-				4FF194E9060058059BF5A15F /* Pods-BrewDog-BrewDogUITests.release.xcconfig */,
+				9754689612016A5C41EBB44B /* Pods-BrewDog.debug.xcconfig */,
+				FD36807A277D6D5CD75D9FE2 /* Pods-BrewDog.release.xcconfig */,
+				9D73A7D5CD2BA83317D33BEB /* Pods-BrewDog-BrewDogTests.debug.xcconfig */,
+				EABFFF9602A1EED2D4F9C450 /* Pods-BrewDog-BrewDogTests.release.xcconfig */,
+				C7133A7D7364CC115E82995F /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */,
+				78494F04C96D5CE0317A2443 /* Pods-BrewDog-BrewDogUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		CCE326465AD440B85C3AEFC2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				19D191F7252D7162B5495A75 /* Pods_BrewDog.framework */,
-				3264075B689D3B1D8C2A31E4 /* Pods_BrewDog_BrewDogTests.framework */,
-				9D38D56BAD9C3DB9983D177B /* Pods_BrewDog_BrewDogUITests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F71557CC222EF2B90000F9C9 = {
@@ -182,7 +185,7 @@
 				F71557FA222EF2BB0000F9C9 /* BrewDogUITests */,
 				F71557D6222EF2B90000F9C9 /* Products */,
 				C0F87E03C5A6833ED7267392 /* Pods */,
-				CCE326465AD440B85C3AEFC2 /* Frameworks */,
+				93984D3A3E6DE7DF89354F72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,6 +244,7 @@
 		F715580B222F000F0000F9C9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F716EB80227887C5004A703A /* Coordinator */,
 				F715580F222F01360000F9C9 /* Infrastructure */,
 				F7155820222F0EA40000F9C9 /* Common */,
 				F78729C4222F28E7008915D4 /* Service */,
@@ -322,6 +326,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		F716EB80227887C5004A703A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F716EB7E227887BE004A703A /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		F78729C4222F28E7008915D4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */,
+				F7610D082273781100737A93 /* UIImage+Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -433,12 +446,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7155800222EF2BB0000F9C9 /* Build configuration list for PBXNativeTarget "BrewDog" */;
 			buildPhases = (
-				61DD193F1C9A60F2DBAA36E5 /* [CP] Check Pods Manifest.lock */,
+				26757E75512EBE8C09145C70 /* [CP] Check Pods Manifest.lock */,
 				F71557D1222EF2B90000F9C9 /* Sources */,
 				F71557D2222EF2B90000F9C9 /* Frameworks */,
 				F71557D3222EF2B90000F9C9 /* Resources */,
 				F7155809222EF4190000F9C9 /* ShellScript */,
-				521FD2612D722B1873F8E216 /* [CP] Embed Pods Frameworks */,
+				29EF1FED0D8A257B1C8EDDC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -453,11 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7155803222EF2BB0000F9C9 /* Build configuration list for PBXNativeTarget "BrewDogTests" */;
 			buildPhases = (
-				A4DF2A344633CC0F554EAF40 /* [CP] Check Pods Manifest.lock */,
+				4F4550ACEE12911343EA0AB6 /* [CP] Check Pods Manifest.lock */,
 				F71557E8222EF2BB0000F9C9 /* Sources */,
 				F71557E9222EF2BB0000F9C9 /* Frameworks */,
 				F71557EA222EF2BB0000F9C9 /* Resources */,
-				3FAB41FD02C3EDB2916C2F03 /* [CP] Embed Pods Frameworks */,
+				F7213CEB1F5312524FBF04E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -473,11 +486,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7155806222EF2BB0000F9C9 /* Build configuration list for PBXNativeTarget "BrewDogUITests" */;
 			buildPhases = (
-				20A9779A4DE589D91C401AE0 /* [CP] Check Pods Manifest.lock */,
+				6BE361181B2D051985185BEE /* [CP] Check Pods Manifest.lock */,
 				F71557F3222EF2BB0000F9C9 /* Sources */,
 				F71557F4222EF2BB0000F9C9 /* Frameworks */,
 				F71557F5222EF2BB0000F9C9 /* Resources */,
-				B448D8AD81FF989A9C59D148 /* [CP] Embed Pods Frameworks */,
+				9D76495DDED01B3609245022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -567,7 +580,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20A9779A4DE589D91C401AE0 /* [CP] Check Pods Manifest.lock */ = {
+		26757E75512EBE8C09145C70 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -582,40 +595,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BrewDog-BrewDogUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrewDog-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3FAB41FD02C3EDB2916C2F03 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		521FD2612D722B1873F8E216 /* [CP] Embed Pods Frameworks */ = {
+		29EF1FED0D8A257B1C8EDDC2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -641,29 +628,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewDog/Pods-BrewDog-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		61DD193F1C9A60F2DBAA36E5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BrewDog-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4DF2A344633CC0F554EAF40 /* [CP] Check Pods Manifest.lock */ = {
+		4F4550ACEE12911343EA0AB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -685,7 +650,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B448D8AD81FF989A9C59D148 /* [CP] Embed Pods Frameworks */ = {
+		6BE361181B2D051985185BEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrewDog-BrewDogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D76495DDED01B3609245022 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -697,6 +684,9 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -705,6 +695,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -723,6 +716,38 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		F7213CEB1F5312524FBF04E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewDog-BrewDogTests/Pods-BrewDog-BrewDogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -751,6 +776,7 @@
 				F78729D322306B43008915D4 /* UICollectionView+Extensions.swift in Sources */,
 				F71557D9222EF2B90000F9C9 /* AppDelegate.swift in Sources */,
 				F715581D222F09470000F9C9 /* BeerCollectionViewCell.swift in Sources */,
+				F716EB7F227887BE004A703A /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +799,7 @@
 			files = (
 				F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */,
 				F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */,
+				F7610D092273781100737A93 /* UIImage+Extensions.swift in Sources */,
 				F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */,
 				F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */,
 				F799E390223897F400BCBDF4 /* BeerScreen.swift in Sources */,
@@ -925,7 +952,7 @@
 		};
 		F7155801222EF2BB0000F9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 678B251D548992459FEC126A /* Pods-BrewDog.debug.xcconfig */;
+			baseConfigurationReference = 9754689612016A5C41EBB44B /* Pods-BrewDog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -946,7 +973,7 @@
 		};
 		F7155802222EF2BB0000F9C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C443084C47BB417CD1C5512 /* Pods-BrewDog.release.xcconfig */;
+			baseConfigurationReference = FD36807A277D6D5CD75D9FE2 /* Pods-BrewDog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -967,7 +994,7 @@
 		};
 		F7155804222EF2BB0000F9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CC19DA02F1CA40803B9EF97 /* Pods-BrewDog-BrewDogTests.debug.xcconfig */;
+			baseConfigurationReference = 9D73A7D5CD2BA83317D33BEB /* Pods-BrewDog-BrewDogTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -987,7 +1014,7 @@
 		};
 		F7155805222EF2BB0000F9C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B1195BB20C46896D27B43BE /* Pods-BrewDog-BrewDogTests.release.xcconfig */;
+			baseConfigurationReference = EABFFF9602A1EED2D4F9C450 /* Pods-BrewDog-BrewDogTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1007,7 +1034,7 @@
 		};
 		F7155807222EF2BB0000F9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A5F238DA90338949565184 /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */;
+			baseConfigurationReference = C7133A7D7364CC115E82995F /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogUITests/Info.plist;
@@ -1018,6 +1045,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ggm.BrewDogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BrewDog;
@@ -1026,7 +1054,7 @@
 		};
 		F7155808222EF2BB0000F9C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FF194E9060058059BF5A15F /* Pods-BrewDog-BrewDogUITests.release.xcconfig */;
+			baseConfigurationReference = 78494F04C96D5CE0317A2443 /* Pods-BrewDog-BrewDogUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogUITests/Info.plist;
@@ -1037,6 +1065,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ggm.BrewDogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BrewDog;

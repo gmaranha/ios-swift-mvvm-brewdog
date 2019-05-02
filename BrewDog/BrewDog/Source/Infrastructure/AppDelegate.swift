@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.silver
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blackCoral]
         UIBarButtonItem.appearance().tintColor = UIColor.blackCoral
+        
+        //todo: colcoar isso no coordinator
+        UIView.setAnimationsEnabled(false)
         return true
     }
 

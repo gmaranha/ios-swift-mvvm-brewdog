@@ -1,3 +1,5 @@
+plugin 'cocoapods-binary'
+
 platform :ios, '12.1'
 use_frameworks!
 inhibit_all_warnings!
@@ -9,15 +11,21 @@ def commomPods
   pod 'Reachability', "~>3.2"
 end
 
+def testCommomPods
+  pod 'iOSSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
+
 target 'BrewDog' do
-  
   commomPods
 
   target 'BrewDogTests' do
     inherit! :complete
+    testCommomPods
   end
 
   target 'BrewDogUITests' do
     inherit! :complete
+    testCommomPods
   end
 end

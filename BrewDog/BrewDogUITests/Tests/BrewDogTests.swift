@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Nimble
+import Nimble_Snapshots
 
 class BrewDogTests: BaseTests {
     
@@ -15,8 +17,13 @@ class BrewDogTests: BaseTests {
         BeerListScreen.waitScreen(testCase: self)
     }
     
-    func testCollectionDidLoad() {
-        waitElementExists(element: BeerListScreen.visibleBeerCell())
+    func testCollectionScroll() {
+        let beerListBeforeImageView = snapshot(element: BeerListScreen.screen, removingStatusBar: true)
+        waitElementExists(element: BeerListScreen.notVisibleBeerCell(), scrollElement: BeerListScreen.screen, timeout: 2)
+        let beerListAfterImageView = snapshot(element: BeerListScreen.screen, removingStatusBar: true)
+        
+        expect(beerListBeforeImageView).to(haveValidSnapshot(identifier: "before"))
+        expect(beerListAfterImageView).to(haveValidSnapshot(identifier: "after"))
     }
     
     func testDetails() {
@@ -24,8 +31,14 @@ class BrewDogTests: BaseTests {
         waitElementExists(element: cell, scrollElement: BeerListScreen.screen, timeout: 2)
         cell.tap()
         BeerScreen.waitScreen(testCase: self)
+        let beerImageView = snapshot(element: BeerListScreen.screen, removingStatusBar: true)
+        
         BeerScreen.tapNavigationBackButton()
         BeerListScreen.waitScreen(testCase: self)
+        let beerListImageView = snapshot(element: BeerListScreen.screen, removingStatusBar: true)
+        
+        expect(beerImageView).to(haveValidSnapshot(identifier: "beerScreen"))
+        expect(beerListImageView).to(haveValidSnapshot(identifier: "beerListScreen"))
     }
     
     func testCollectionRefresh() {
