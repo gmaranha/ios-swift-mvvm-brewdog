@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import BrewDog
 
 class BeerServiceMock: BeerServiceProtocol {
@@ -78,14 +79,17 @@ class BeerListViewModelTests: BaseTests {
         
         //Assert
         waitForExpectations(timeout: 1)
-        XCTAssertEqual(vm.beers.count, beerList.beers.count)
-        XCTAssertEqual(vm.beers.first?.id, beer.id)
-        XCTAssertEqual(vm.beers.first?.imageURL, beer.imageURL)
-        XCTAssertEqual(vm.beers.first?.name, beer.name)
-        XCTAssertEqual(vm.beers.first?.tagline, beer.tagline)
-        XCTAssertEqual(vm.beers.first?.abvString, "abv 20.0%")
-        XCTAssertEqual(vm.beers.first?.ibuString, "ibu 10.0")
-        XCTAssertEqual(vm.beers.first?.description, beer.description)
+        expect(vm.beers.count).to(equal(beerList.beers.count))
+        
+        
+        expect(vm.beers.count).to(equal(beerList.beers.count))
+        expect(vm.beers.first?.id).to(equal(beer.id))
+        expect(vm.beers.first?.imageURL).to(equal(beer.imageURL))
+        expect(vm.beers.first?.name).to(equal(beer.name))
+        expect(vm.beers.first?.tagline).to(equal(beer.tagline))
+        expect(vm.beers.first?.abvString).to(equal("abv 20.0%"))
+        expect(vm.beers.first?.ibuString).to(equal("ibu 10.0"))
+        expect(vm.beers.first?.description).to(equal(beer.description))
     }
     
     func testErrorFetch() {
@@ -95,7 +99,7 @@ class BeerListViewModelTests: BaseTests {
         let vm = BeerListViewModel(beerService: beerServiceMock)
         let vmDelegate = BeerListViewModelDelegateMock(modelThrewErrorAssertion: { viewModel, error in
             expectation.fulfill()
-            XCTAssertTrue(viewModel === vm)
+            expect(viewModel === vm).to(beTrue())
             guard case BrewDogError.generic = error else {
                 XCTFail("Wrong error type")
                 return
@@ -119,8 +123,8 @@ class BeerListViewModelTests: BaseTests {
         let beerList = BeerList(beers: [Beer()])
         let beerServiceMock = BeerServiceMock(beerList: beerList) { (page, perPage) in
             expectation.fulfill()
-            XCTAssertEqual(page, 1)
-            XCTAssertEqual(perPage, 8)
+            expect(page).to(equal(1))
+            expect(perPage).to(equal(8))
         }
         let vm = BeerListViewModel(beerService: beerServiceMock)
         
@@ -138,8 +142,8 @@ class BeerListViewModelTests: BaseTests {
         expectation = self.expectation(description: "Params second page assertion")
         beerServiceMock.paramsAssertion = { (page, perPage) in
             expectation.fulfill()
-            XCTAssertEqual(page, 2)
-            XCTAssertEqual(perPage, 8)
+            expect(page).to(equal(2))
+            expect(perPage).to(equal(8))
         }
         
         //Act
@@ -155,8 +159,8 @@ class BeerListViewModelTests: BaseTests {
         expectation = self.expectation(description: "Params refresh assertion")
         beerServiceMock.paramsAssertion = { (page, perPage) in
             expectation.fulfill()
-            XCTAssertEqual(page, 1)
-            XCTAssertEqual(perPage, 8)
+            expect(page).to(equal(1))
+            expect(perPage).to(equal(8))
         }
         
         //Act
@@ -183,10 +187,10 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch()
         
         //Assert
-        XCTAssertEqual(vm.numberOfItens(in: 0), 2)
+        expect(vm.numberOfItens(in: 0)).to(equal(2))
         if case let BeerListViewModel.CellType.beer(bvm) = vm.cellType(at: IndexPath(row: 0, section: 0)),
             case BeerListViewModel.CellType.loading = vm.cellType(at: IndexPath(row: 1, section: 0)) {
-            XCTAssertEqual(bvm.id, vm.beers.first?.id)
+            expect(bvm.id).to(equal(vm.beers.first?.id))
         } else {
             XCTFail("Wrong cell type at index")
         }
@@ -212,9 +216,9 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch()
         
         //Assert
-        XCTAssertEqual(vm.numberOfItens(in: 0), 1)
+        expect(vm.numberOfItens(in: 0)).to(equal(1))
         if case let BeerListViewModel.CellType.beer(bvm) = vm.cellType(at: IndexPath(row: 0, section: 0)) {
-            XCTAssertEqual(bvm.id, vm.beers.first?.id)
+            expect(bvm.id).to(equal(vm.beers.first?.id))
         } else {
             XCTFail("Wrong cell type at index")
         }
@@ -240,6 +244,6 @@ class BeerListViewModelTests: BaseTests {
         vm.fetch(refresh: true)
         
         //Assert
-        XCTAssertEqual(vm.numberOfItens(in: 0), 0)
+        expect(vm.numberOfItens(in: 0)).to(equal(0))
     }
 }

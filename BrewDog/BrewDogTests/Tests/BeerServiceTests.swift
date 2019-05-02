@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import BrewDog
 
 class URLSessionMock: BaseMock, BrewDogURLSession {
@@ -110,14 +111,14 @@ class BeerServiceTests: BaseTests {
         
         //Assert
         waitForExpectations(timeout: 1)
-        XCTAssertEqual(beerList.beers.count, 1)
-        XCTAssertEqual(beerList.beers[0].id, 1)
-        XCTAssertEqual(beerList.beers[0].imageURL, "https://images.punkapi.com/v2/keg.png")
-        XCTAssertEqual(beerList.beers[0].name, "Buzz")
-        XCTAssertEqual(beerList.beers[0].tagline, "A Real Bitter Experience.")
-        XCTAssertEqual(beerList.beers[0].alcoholByVolume, 4.5)
-        XCTAssertEqual(beerList.beers[0].internationalBitternessUnits, 60.0)
-        XCTAssertEqual(beerList.beers[0].description, "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.")
+        expect(beerList.beers.count).to(equal(1))
+        expect(beerList.beers[0].id).to(equal(1))
+        expect(beerList.beers[0].imageURL).to(equal("https://images.punkapi.com/v2/keg.png"))
+        expect(beerList.beers[0].name).to(equal("Buzz"))
+        expect(beerList.beers[0].tagline).to(equal("A Real Bitter Experience."))
+        expect(beerList.beers[0].alcoholByVolume).to(equal(4.5))
+        expect(beerList.beers[0].internationalBitternessUnits).to(equal(60.0))
+        expect(beerList.beers[0].description).to(equal("A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."))
     }
     
     func testGeneratedURL() {
@@ -126,7 +127,7 @@ class BeerServiceTests: BaseTests {
         let urlSessionMock = URLSessionMock.init(file: "Beer", error: BrewDogError.offlineMode)
                 urlSessionMock.urlAssertBlock = {url in
                     expectation.fulfill()
-                    XCTAssertEqual(url?.absoluteString, "https://api.punkapi.com/v2/beers?page=2&per_page=4")
+                    expect(url?.absoluteString).to(equal("https://api.punkapi.com/v2/beers?page=2&per_page=4"))
                 }
         
         let service = BeerService(session: urlSessionMock, reachability: ReachabilityMock())
