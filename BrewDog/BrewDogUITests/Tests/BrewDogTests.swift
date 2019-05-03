@@ -10,6 +10,7 @@ import XCTest
 import Nimble
 import Nimble_Snapshots
 
+// Feature As an app user I should be able to view beers
 class BrewDogTests: BaseTests {
     
     override func setUp() {
@@ -17,6 +18,9 @@ class BrewDogTests: BaseTests {
         BeerListScreen.waitScreen(testCase: self)
     }
     
+    //Scenario: View beers list
+    //Given I start the app
+    //Then I should see the list of beers
     func testCollectionScroll() {
         let beerListBeforeImageView = snapshot(element: BeerListScreen.screen, removingStatusBar: true)
         waitElementExists(element: BeerListScreen.notVisibleBeerCell(), scrollElement: BeerListScreen.screen, timeout: 2)
@@ -26,6 +30,10 @@ class BrewDogTests: BaseTests {
         expect(beerListAfterImageView).to(haveValidSnapshot(identifier: "after"))
     }
     
+    //Scenario: View beer details
+    //Given I start the app
+    //When I select a beer
+    //Then I should see the beer details
     func testDetails() {
         let cell = BeerListScreen.notVisibleBeerCell()
         waitElementExists(element: cell, scrollElement: BeerListScreen.screen, timeout: 2)
@@ -41,6 +49,10 @@ class BrewDogTests: BaseTests {
         expect(beerListImageView).to(haveValidSnapshot(identifier: "beerListScreen"))
     }
     
+    //Scenario: Refresh beers list
+    //Given I start the app
+    //When I pull to refresh
+    //Then I should see the list of beers
     func testCollectionRefresh() {
         let cell = BeerListScreen.visibleBeerCell()
         let screen = BeerListScreen.screen
