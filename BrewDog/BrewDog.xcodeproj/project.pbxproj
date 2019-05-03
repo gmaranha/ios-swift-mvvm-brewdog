@@ -30,8 +30,7 @@
 		F78729D322306B43008915D4 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D222306B43008915D4 /* UICollectionView+Extensions.swift */; };
 		F78729D5223070EB008915D4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D4223070EB008915D4 /* BeerDetailViewController.swift */; };
 		F78729D72230C9B3008915D4 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */; };
-		F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3832238807000BCBDF4 /* BaseTests.swift */; };
-		F799E38B2238807000BCBDF4 /* BrewDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3842238807000BCBDF4 /* BrewDogTests.swift */; };
+		F799E38A2238807000BCBDF4 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3832238807000BCBDF4 /* CucumberishInitializer.swift */; };
 		F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3862238807000BCBDF4 /* BaseScreen.swift */; };
 		F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3872238807000BCBDF4 /* BeerListScreen.swift */; };
 		F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */; };
@@ -47,6 +46,8 @@
 		F79EE182223C15E7004958F7 /* BeerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE181223C15E7004958F7 /* BeerViewModelTests.swift */; };
 		F79EE184223C187F004958F7 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE183223C187F004958F7 /* BeerListViewModelTests.swift */; };
 		F79EE186223C18C0004958F7 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EE185223C18C0004958F7 /* BaseTests.swift */; };
+		F7C508CD227C117600A95887 /* CucumberishConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C508CC227C117600A95887 /* CucumberishConfig.m */; };
+		F7C508CF227C130D00A95887 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = F7C508CE227C130D00A95887 /* Features */; };
 		F7CA2B9B2231B1F200098ACE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */; };
 		F7CA2B9F2231BA0800098ACE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
@@ -103,8 +104,7 @@
 		F78729D222306B43008915D4 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		F78729D4223070EB008915D4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		F78729D62230C9B3008915D4 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		F799E3832238807000BCBDF4 /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
-		F799E3842238807000BCBDF4 /* BrewDogTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewDogTests.swift; sourceTree = "<group>"; };
+		F799E3832238807000BCBDF4 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		F799E3862238807000BCBDF4 /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		F799E3872238807000BCBDF4 /* BeerListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListScreen.swift; sourceTree = "<group>"; };
 		F799E3892238807000BCBDF4 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
@@ -121,6 +121,9 @@
 		F79EE181223C15E7004958F7 /* BeerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModelTests.swift; sourceTree = "<group>"; };
 		F79EE183223C187F004958F7 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
 		F79EE185223C18C0004958F7 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
+		F7C508CB227C117600A95887 /* BrewDogUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrewDogUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7C508CC227C117600A95887 /* CucumberishConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CucumberishConfig.m; sourceTree = "<group>"; };
+		F7C508CE227C130D00A95887 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
 		F7CA2B9A2231B1F200098ACE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7CA2B9E2231BA0800098ACE /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		FD36807A277D6D5CD75D9FE2 /* Pods-BrewDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewDog.release.xcconfig"; path = "Target Support Files/Pods-BrewDog/Pods-BrewDog.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +227,7 @@
 		F71557FA222EF2BB0000F9C9 /* BrewDogUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F7C508CE227C130D00A95887 /* Features */,
 				F799E3882238807000BCBDF4 /* Common */,
 				F799E3852238807000BCBDF4 /* Screens */,
 				F799E3822238807000BCBDF4 /* Tests */,
@@ -375,8 +379,9 @@
 		F799E3822238807000BCBDF4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F799E3832238807000BCBDF4 /* BaseTests.swift */,
-				F799E3842238807000BCBDF4 /* BrewDogTests.swift */,
+				F799E3832238807000BCBDF4 /* CucumberishInitializer.swift */,
+				F7C508CC227C117600A95887 /* CucumberishConfig.m */,
+				F7C508CB227C117600A95887 /* BrewDogUITests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 					};
 					F71557F6222EF2BB0000F9C9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = F71557D4222EF2B90000F9C9;
 					};
 				};
@@ -574,6 +580,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C508CF227C130D00A95887 /* Features in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +694,7 @@
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Cucumberish/Cucumberish.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -698,6 +706,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cucumberish.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -797,13 +806,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F799E38A2238807000BCBDF4 /* BaseTests.swift in Sources */,
+				F799E38A2238807000BCBDF4 /* CucumberishInitializer.swift in Sources */,
 				F799E38C2238807000BCBDF4 /* BaseScreen.swift in Sources */,
 				F7610D092273781100737A93 /* UIImage+Extensions.swift in Sources */,
 				F799E38D2238807000BCBDF4 /* BeerListScreen.swift in Sources */,
 				F799E38E2238807000BCBDF4 /* XCTestCase+Extensions.swift in Sources */,
 				F799E390223897F400BCBDF4 /* BeerScreen.swift in Sources */,
-				F799E38B2238807000BCBDF4 /* BrewDogTests.swift in Sources */,
+				F7C508CD227C117600A95887 /* CucumberishConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,6 +1045,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7133A7D7364CC115E82995F /* Pods-BrewDog-BrewDogUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1046,6 +1056,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ggm.BrewDogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrewDogUITests/Tests/BrewDogUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BrewDog;
@@ -1056,6 +1068,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78494F04C96D5CE0317A2443 /* Pods-BrewDog-BrewDogUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BrewDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1066,6 +1079,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ggm.BrewDogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrewDogUITests/Tests/BrewDogUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BrewDog;

@@ -29,11 +29,6 @@ extension XCTestCase {
                 if exists {
                     return
                 }
-                
-                //let start = scrollElement.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
-                //let finish = start.withOffset(CGVector(dx: 0, dy: -25))
-                
-                //start.press(forDuration: 0.5, thenDragTo: finish)
 
                 scrollElement.swipeUp()
                 
@@ -41,6 +36,6 @@ extension XCTestCase {
             }
         }
         
-        expect(exists).to(beTrue(),description: "Element \"\(element)\" was not found")
+        expect(exists).to(beTrue(), description: "Element \"\(element)\" was not found")
     }
 }

@@ -27,5 +27,6 @@ target 'BrewDog' do
   target 'BrewDogUITests' do
     inherit! :complete
     testCommomPods
+    pod 'Cucumberish'
   end
 end
